@@ -1,0 +1,1283 @@
+!SESSION 2020-05-18 12:30:08.103 -----------------------------------------------
+eclipse.buildId=4.6.1.202004200639-RELEASE
+java.version=11.0.7
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=pt_BR
+Framework arguments:  (cópia) (cópia)
+Command-line arguments:  -os linux -ws gtk -arch x86_64 (cópia) (cópia)
+
+!ENTRY org.eclipse.ui 2 0 2020-05-18 12:30:20.705
+!MESSAGE Warnings while parsing the key bindings from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.bindings' extension point
+!SUBENTRY 1 org.eclipse.ui 2 0 2020-05-18 12:30:20.705
+!MESSAGE Defining a key binding with no key sequence has no effect: plug-in='org.springframework.ide.eclipse.boot.wizard', id='org.springframework.ide.eclipse.boot.wizard.addStarersSwitchHandler'
+
+!ENTRY org.eclipse.ui 2 0 2020-05-18 12:30:20.935
+!MESSAGE Warnings while parsing the images from the 'org.eclipse.ui.commandImages' extension point.
+!SUBENTRY 1 org.eclipse.ui 2 0 2020-05-18 12:30:20.935
+!MESSAGE Cannot bind to an undefined command: plug-in='com.genuitec.eclipse.theming.ui', id='com.genuitec.myeclipse.help.darktheme.commandid'
+
+!ENTRY com.genuitec.eclipse.theming.ui 1 0 2020-05-18 12:30:21.631
+!MESSAGE A DevStyle Theme is being activated on this workspace; preparing colors and configuration
+
+!ENTRY com.genuitec.eclipse.theming.ui 1 0 2020-05-18 12:30:21.669
+!MESSAGE DevStyle has archived current color configurations to alternate preferences - will be restored when switching out of the DevStyle Theme
+
+!ENTRY org.eclipse.jface 2 0 2020-05-18 12:30:22.158
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2020-05-18 12:30:22.158
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@719e8f9f,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@5122387,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.equinox.preferences 4 4 2020-05-18 12:30:23.905
+!MESSAGE Exception saving preferences to: /media/vanilson/vjm/Treinamento/udemy/spring rest/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.springframework.ide.eclipse.boot.dash:Cloud Foundry.prefs.
+!STACK 0
+java.io.FileNotFoundException: /media/vanilson/vjm/Treinamento/udemy/spring rest/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.springframework.ide.eclipse.boot.dash:Cloud Foundry.prefs (Arquivo ou diretório inexistente)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:298)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:237)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:187)
+	at org.eclipse.core.internal.preferences.SafeFileOutputStream.<init>(SafeFileOutputStream.java:49)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.write(EclipsePreferences.java:281)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.save(EclipsePreferences.java:1075)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.save(EclipsePreferences.java:1051)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.internalFlush(EclipsePreferences.java:432)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.flush(EclipsePreferences.java:389)
+	at org.springframework.ide.eclipse.boot.pstore.PreferenceBasedStore.put(PreferenceBasedStore.java:37)
+	at org.springframework.ide.eclipse.boot.dash.model.RunTargetPropertiesManager.store(RunTargetPropertiesManager.java:105)
+	at org.springframework.ide.eclipse.boot.dash.model.RunTargetPropertiesManager.gotValue(RunTargetPropertiesManager.java:79)
+	at org.springframework.ide.eclipse.boot.dash.model.RunTargetPropertiesManager.gotValue(RunTargetPropertiesManager.java:1)
+	at org.springsource.ide.eclipse.commons.livexp.core.LiveExpression.addListener(LiveExpression.java:170)
+	at org.springframework.ide.eclipse.boot.dash.model.BootDashViewModel.<init>(BootDashViewModel.java:65)
+	at org.springframework.ide.eclipse.boot.dash.di.SimpleDIContext$Definition.get(SimpleDIContext.java:68)
+	at org.springframework.ide.eclipse.boot.dash.di.SimpleDIContext.lambda$1(SimpleDIContext.java:106)
+	at com.google.common.cache.LocalCache$LocalManualCache$1.load(LocalCache.java:4878)
+	at com.google.common.cache.LocalCache$LoadingValueReference.loadFuture(LocalCache.java:3529)
+	at com.google.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2278)
+	at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2155)
+	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2045)
+	at com.google.common.cache.LocalCache.get(LocalCache.java:3953)
+	at com.google.common.cache.LocalCache$LocalManualCache.get(LocalCache.java:4873)
+	at org.springframework.ide.eclipse.boot.dash.di.SimpleDIContext.getBean(SimpleDIContext.java:106)
+	at org.springframework.ide.eclipse.boot.dash.BootDashActivator.getModel(BootDashActivator.java:143)
+	at org.springframework.ide.eclipse.boot.dash.views.BootDashTreeView.<init>(BootDashTreeView.java:75)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:204)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:923)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:246)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:63)
+	at org.eclipse.ui.internal.registry.ViewDescriptor.createView(ViewDescriptor.java:61)
+	at org.eclipse.ui.internal.ViewReference.createPart(ViewReference.java:103)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.createPart(CompatibilityPart.java:300)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.create(CompatibilityPart.java:338)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:1002)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:967)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalInject(InjectorImpl.java:139)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalMake(InjectorImpl.java:408)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.make(InjectorImpl.java:331)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.make(ContextInjectionFactory.java:202)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:91)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:60)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:42)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributedPartRenderer.createWidget(ContributedPartRenderer.java:132)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:1002)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:662)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$1.run(PartRenderingEngine.java:547)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:531)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ElementReferenceRenderer.createWidget(ElementReferenceRenderer.java:73)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:1002)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:662)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:768)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:739)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:733)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:717)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl$1.handleEvent(PartServiceImpl.java:112)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler.lambda$0(UIEventHandler.java:38)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:236)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:133)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:5797)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application$1.syncExec(E4Application.java:219)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler.handleEvent(UIEventHandler.java:38)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:205)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:203)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:132)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:75)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:44)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:55)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:63)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:424)
+	at org.eclipse.e4.ui.model.application.ui.impl.ElementContainerImpl.setSelectedElementGen(ElementContainerImpl.java:170)
+	at org.eclipse.e4.ui.model.application.ui.impl.ElementContainerImpl.setSelectedElement(ElementContainerImpl.java:188)
+	at org.eclipse.e4.ui.workbench.renderers.swt.LazyStackRenderer.postProcess(LazyStackRenderer.java:110)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:680)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:768)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:739)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:733)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:717)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:71)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:148)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:676)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:768)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:739)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:733)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:717)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:71)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:148)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:676)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:768)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:739)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:733)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:717)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:71)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:148)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:676)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:768)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:739)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:733)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:717)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:71)
+	at org.eclipse.e4.ui.workbench.renderers.swt.PerspectiveRenderer.processContents(PerspectiveRenderer.java:51)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:676)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:768)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:739)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:733)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:717)
+	at org.eclipse.e4.ui.workbench.renderers.swt.PerspectiveStackRenderer.showTab(PerspectiveStackRenderer.java:82)
+	at org.eclipse.e4.ui.workbench.renderers.swt.LazyStackRenderer.lambda$0(LazyStackRenderer.java:75)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler.lambda$0(UIEventHandler.java:38)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:236)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:133)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:5797)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application$1.syncExec(E4Application.java:219)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler.handleEvent(UIEventHandler.java:38)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:205)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:203)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:132)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:75)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:44)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:55)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:63)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:424)
+	at org.eclipse.e4.ui.model.application.ui.advanced.impl.PerspectiveStackImpl.setSelectedElement(PerspectiveStackImpl.java:152)
+	at org.eclipse.e4.ui.model.application.ui.advanced.impl.PerspectiveStackImpl.setSelectedElement(PerspectiveStackImpl.java:1)
+	at org.eclipse.ui.internal.WorkbenchPage.busySetPerspective(WorkbenchPage.java:4035)
+	at org.eclipse.ui.internal.WorkbenchPage.lambda$10(WorkbenchPage.java:3972)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:72)
+	at org.eclipse.ui.internal.WorkbenchPage.setPerspective(WorkbenchPage.java:3972)
+	at org.eclipse.ui.internal.WorkbenchWindow.setup(WorkbenchWindow.java:922)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:1002)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalInject(InjectorImpl.java:139)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.inject(InjectorImpl.java:95)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.inject(ContextInjectionFactory.java:83)
+	at org.eclipse.ui.internal.Workbench.createWorkbenchWindow(Workbench.java:1503)
+	at org.eclipse.ui.internal.StandardTrim.createStatusLine(StandardTrim.java:119)
+	at org.eclipse.ui.internal.StandardTrim.createWidget(StandardTrim.java:48)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:1002)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalInject(InjectorImpl.java:139)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalMake(InjectorImpl.java:408)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.make(InjectorImpl.java:345)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.make(ContextInjectionFactory.java:227)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:94)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:60)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:37)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ToolControlRenderer.createWidget(ToolControlRenderer.java:129)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:1002)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:662)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:768)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:739)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:733)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:717)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:71)
+	at org.eclipse.e4.ui.workbench.renderers.swt.TrimBarRenderer.processContents(TrimBarRenderer.java:134)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:676)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$1.run(PartRenderingEngine.java:547)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:531)
+	at org.eclipse.e4.ui.workbench.renderers.swt.WBWRenderer.processContents(WBWRenderer.java:688)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:676)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:768)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:739)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:733)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:717)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1086)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1049)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:658)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:557)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:154)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:150)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1447)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1420)
+
+!ENTRY Activator 4 0 2020-05-18 12:30:23.911
+!MESSAGE FileNotFoundException: /media/vanilson/vjm/Treinamento/udemy/spring rest/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.springframework.ide.eclipse.boot.dash:Cloud Foundry.prefs (Arquivo ou diretório inexistente)
+!STACK 0
+org.osgi.service.prefs.BackingStoreException: Exception saving preferences to: /media/vanilson/vjm/Treinamento/udemy/spring rest/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.springframework.ide.eclipse.boot.dash:Cloud Foundry.prefs.
+	at org.eclipse.core.internal.preferences.EclipsePreferences.write(EclipsePreferences.java:287)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.save(EclipsePreferences.java:1075)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.save(EclipsePreferences.java:1051)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.internalFlush(EclipsePreferences.java:432)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.flush(EclipsePreferences.java:389)
+	at org.springframework.ide.eclipse.boot.pstore.PreferenceBasedStore.put(PreferenceBasedStore.java:37)
+	at org.springframework.ide.eclipse.boot.dash.model.RunTargetPropertiesManager.store(RunTargetPropertiesManager.java:105)
+	at org.springframework.ide.eclipse.boot.dash.model.RunTargetPropertiesManager.gotValue(RunTargetPropertiesManager.java:79)
+	at org.springframework.ide.eclipse.boot.dash.model.RunTargetPropertiesManager.gotValue(RunTargetPropertiesManager.java:1)
+	at org.springsource.ide.eclipse.commons.livexp.core.LiveExpression.addListener(LiveExpression.java:170)
+	at org.springframework.ide.eclipse.boot.dash.model.BootDashViewModel.<init>(BootDashViewModel.java:65)
+	at org.springframework.ide.eclipse.boot.dash.di.SimpleDIContext$Definition.get(SimpleDIContext.java:68)
+	at org.springframework.ide.eclipse.boot.dash.di.SimpleDIContext.lambda$1(SimpleDIContext.java:106)
+	at com.google.common.cache.LocalCache$LocalManualCache$1.load(LocalCache.java:4878)
+	at com.google.common.cache.LocalCache$LoadingValueReference.loadFuture(LocalCache.java:3529)
+	at com.google.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2278)
+	at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2155)
+	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2045)
+	at com.google.common.cache.LocalCache.get(LocalCache.java:3953)
+	at com.google.common.cache.LocalCache$LocalManualCache.get(LocalCache.java:4873)
+	at org.springframework.ide.eclipse.boot.dash.di.SimpleDIContext.getBean(SimpleDIContext.java:106)
+	at org.springframework.ide.eclipse.boot.dash.BootDashActivator.getModel(BootDashActivator.java:143)
+	at org.springframework.ide.eclipse.boot.dash.views.BootDashTreeView.<init>(BootDashTreeView.java:75)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:204)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:923)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:246)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:63)
+	at org.eclipse.ui.internal.registry.ViewDescriptor.createView(ViewDescriptor.java:61)
+	at org.eclipse.ui.internal.ViewReference.createPart(ViewReference.java:103)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.createPart(CompatibilityPart.java:300)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.create(CompatibilityPart.java:338)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:1002)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:967)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalInject(InjectorImpl.java:139)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalMake(InjectorImpl.java:408)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.make(InjectorImpl.java:331)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.make(ContextInjectionFactory.java:202)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:91)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:60)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:42)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributedPartRenderer.createWidget(ContributedPartRenderer.java:132)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:1002)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:662)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$1.run(PartRenderingEngine.java:547)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:531)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ElementReferenceRenderer.createWidget(ElementReferenceRenderer.java:73)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:1002)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:662)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:768)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:739)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:733)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:717)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl$1.handleEvent(PartServiceImpl.java:112)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler.lambda$0(UIEventHandler.java:38)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:236)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:133)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:5797)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application$1.syncExec(E4Application.java:219)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler.handleEvent(UIEventHandler.java:38)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:205)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:203)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:132)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:75)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:44)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:55)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:63)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:424)
+	at org.eclipse.e4.ui.model.application.ui.impl.ElementContainerImpl.setSelectedElementGen(ElementContainerImpl.java:170)
+	at org.eclipse.e4.ui.model.application.ui.impl.ElementContainerImpl.setSelectedElement(ElementContainerImpl.java:188)
+	at org.eclipse.e4.ui.workbench.renderers.swt.LazyStackRenderer.postProcess(LazyStackRenderer.java:110)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:680)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:768)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:739)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:733)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:717)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:71)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:148)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:676)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:768)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:739)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:733)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:717)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:71)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:148)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:676)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:768)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:739)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:733)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:717)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:71)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:148)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:676)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:768)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:739)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:733)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:717)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:71)
+	at org.eclipse.e4.ui.workbench.renderers.swt.PerspectiveRenderer.processContents(PerspectiveRenderer.java:51)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:676)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:768)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:739)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:733)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:717)
+	at org.eclipse.e4.ui.workbench.renderers.swt.PerspectiveStackRenderer.showTab(PerspectiveStackRenderer.java:82)
+	at org.eclipse.e4.ui.workbench.renderers.swt.LazyStackRenderer.lambda$0(LazyStackRenderer.java:75)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler.lambda$0(UIEventHandler.java:38)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:236)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:133)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:5797)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application$1.syncExec(E4Application.java:219)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler.handleEvent(UIEventHandler.java:38)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:205)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:203)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:132)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:75)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:44)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:55)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:63)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:424)
+	at org.eclipse.e4.ui.model.application.ui.advanced.impl.PerspectiveStackImpl.setSelectedElement(PerspectiveStackImpl.java:152)
+	at org.eclipse.e4.ui.model.application.ui.advanced.impl.PerspectiveStackImpl.setSelectedElement(PerspectiveStackImpl.java:1)
+	at org.eclipse.ui.internal.WorkbenchPage.busySetPerspective(WorkbenchPage.java:4035)
+	at org.eclipse.ui.internal.WorkbenchPage.lambda$10(WorkbenchPage.java:3972)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:72)
+	at org.eclipse.ui.internal.WorkbenchPage.setPerspective(WorkbenchPage.java:3972)
+	at org.eclipse.ui.internal.WorkbenchWindow.setup(WorkbenchWindow.java:922)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:1002)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalInject(InjectorImpl.java:139)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.inject(InjectorImpl.java:95)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.inject(ContextInjectionFactory.java:83)
+	at org.eclipse.ui.internal.Workbench.createWorkbenchWindow(Workbench.java:1503)
+	at org.eclipse.ui.internal.StandardTrim.createStatusLine(StandardTrim.java:119)
+	at org.eclipse.ui.internal.StandardTrim.createWidget(StandardTrim.java:48)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:1002)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalInject(InjectorImpl.java:139)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalMake(InjectorImpl.java:408)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.make(InjectorImpl.java:345)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.make(ContextInjectionFactory.java:227)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:94)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:60)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:37)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ToolControlRenderer.createWidget(ToolControlRenderer.java:129)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:1002)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:662)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:768)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:739)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:733)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:717)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:71)
+	at org.eclipse.e4.ui.workbench.renderers.swt.TrimBarRenderer.processContents(TrimBarRenderer.java:134)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:676)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$1.run(PartRenderingEngine.java:547)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:531)
+	at org.eclipse.e4.ui.workbench.renderers.swt.WBWRenderer.processContents(WBWRenderer.java:688)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:676)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:768)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:739)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:733)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:717)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1086)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1049)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:658)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:557)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:154)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:150)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1447)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1420)
+Caused by: java.io.FileNotFoundException: /media/vanilson/vjm/Treinamento/udemy/spring rest/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.springframework.ide.eclipse.boot.dash:Cloud Foundry.prefs (Arquivo ou diretório inexistente)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:298)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:237)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:187)
+	at org.eclipse.core.internal.preferences.SafeFileOutputStream.<init>(SafeFileOutputStream.java:49)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.write(EclipsePreferences.java:281)
+	... 215 more
+
+!ENTRY org.eclipse.ui 2 0 2020-05-18 12:30:25.111
+!MESSAGE Warnings while parsing the key bindings from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.bindings' extension point
+!SUBENTRY 1 org.eclipse.ui 2 0 2020-05-18 12:30:25.111
+!MESSAGE Defining a key binding with no key sequence has no effect: plug-in='org.springframework.ide.eclipse.boot.wizard', id='org.springframework.ide.eclipse.boot.wizard.addStarersSwitchHandler'
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-05-18 17:29:48.450
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-05-18 17:29:48.451
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@180f49c5[org.springframework.tooling.boot.ls:1.17.0.202004200519(id=629)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-05-18 17:29:48.452
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-05-18 17:29:48.479
+!MESSAGE Instantiating ReusableClasspathListenerHandler
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-05-18 17:29:49.582
+!MESSAGE Boot LS startup time from start to initialized: 1121ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-05-18 17:29:49.608
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.JmXcnhmsisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-05-18 17:29:49.608
+!MESSAGE Creating project sorter...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-05-18 17:29:49.609
+!MESSAGE Creating project sorter... DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-05-18 17:29:49.609
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-05-18 17:29:49.611
+!MESSAGE Scheduling initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-05-18 17:29:49.611
+!MESSAGE Scheduling initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-05-18 17:29:49.611
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.JmXcnhms => OK
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-05-18 17:32:08.357
+!MESSAGE Could not transfer metadata commons-io:commons-io/maven-metadata.xml from/to spring-milestone (https://repo.spring.io/milestone): The operation was cancelled.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-05-18 17:32:08.358
+!MESSAGE Could not transfer metadata commons-io:commons-io/maven-metadata.xml from/to spring-snapshot (https://repo.spring.io/snapshot): The operation was cancelled.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-05-18 17:32:08.358
+!MESSAGE Could not transfer metadata commons-io:commons-io/maven-metadata.xml from/to rabbit-milestone (https://dl.bintray.com/rabbitmq/maven-milestones): The operation was cancelled.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-05-18 17:32:08.358
+!MESSAGE Could not transfer metadata commons-io:commons-io/maven-metadata.xml from/to central (https://repo.maven.apache.org/maven2): The operation was cancelled.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-05-18 17:32:08.470
+!MESSAGE Failure to transfer commons-io:commons-io/maven-metadata.xml from https://repo.spring.io/milestone was cached in the local repository, resolution will not be reattempted until the update interval of spring-milestone has elapsed or updates are forced. Original error: Could not transfer metadata commons-io:commons-io/maven-metadata.xml from/to spring-milestone (https://repo.spring.io/milestone): The operation was cancelled.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-05-18 17:32:08.496
+!MESSAGE Failure to transfer commons-io:commons-io/maven-metadata.xml from https://repo.spring.io/snapshot was cached in the local repository, resolution will not be reattempted until the update interval of spring-snapshot has elapsed or updates are forced. Original error: Could not transfer metadata commons-io:commons-io/maven-metadata.xml from/to spring-snapshot (https://repo.spring.io/snapshot): The operation was cancelled.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-05-18 17:32:08.497
+!MESSAGE Failure to transfer commons-io:commons-io/maven-metadata.xml from https://dl.bintray.com/rabbitmq/maven-milestones was cached in the local repository, resolution will not be reattempted until the update interval of rabbit-milestone has elapsed or updates are forced. Original error: Could not transfer metadata commons-io:commons-io/maven-metadata.xml from/to rabbit-milestone (https://dl.bintray.com/rabbitmq/maven-milestones): The operation was cancelled.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-05-18 17:32:08.497
+!MESSAGE Failure to transfer commons-io:commons-io/maven-metadata.xml from https://repo.maven.apache.org/maven2 was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer metadata commons-io:commons-io/maven-metadata.xml from/to central (https://repo.maven.apache.org/maven2): The operation was cancelled.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-05-18 17:32:08.812
+!MESSAGE Failure to transfer commons-io:commons-io/maven-metadata.xml from https://repo.spring.io/milestone was cached in the local repository, resolution will not be reattempted until the update interval of spring-milestone has elapsed or updates are forced. Original error: Could not transfer metadata commons-io:commons-io/maven-metadata.xml from/to spring-milestone (https://repo.spring.io/milestone): The operation was cancelled.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-05-18 17:32:08.812
+!MESSAGE Failure to transfer commons-io:commons-io/maven-metadata.xml from https://repo.spring.io/snapshot was cached in the local repository, resolution will not be reattempted until the update interval of spring-snapshot has elapsed or updates are forced. Original error: Could not transfer metadata commons-io:commons-io/maven-metadata.xml from/to spring-snapshot (https://repo.spring.io/snapshot): The operation was cancelled.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-05-18 17:32:08.813
+!MESSAGE Failure to transfer commons-io:commons-io/maven-metadata.xml from https://dl.bintray.com/rabbitmq/maven-milestones was cached in the local repository, resolution will not be reattempted until the update interval of rabbit-milestone has elapsed or updates are forced. Original error: Could not transfer metadata commons-io:commons-io/maven-metadata.xml from/to rabbit-milestone (https://dl.bintray.com/rabbitmq/maven-milestones): The operation was cancelled.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-05-18 17:32:08.823
+!MESSAGE Failure to transfer commons-io:commons-io/maven-metadata.xml from https://repo.maven.apache.org/maven2 was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer metadata commons-io:commons-io/maven-metadata.xml from/to central (https://repo.maven.apache.org/maven2): The operation was cancelled.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-05-18 17:32:09.078
+!MESSAGE Failure to transfer commons-io:commons-io/maven-metadata.xml from https://repo.spring.io/milestone was cached in the local repository, resolution will not be reattempted until the update interval of spring-milestone has elapsed or updates are forced. Original error: Could not transfer metadata commons-io:commons-io/maven-metadata.xml from/to spring-milestone (https://repo.spring.io/milestone): The operation was cancelled.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-05-18 17:32:09.107
+!MESSAGE Failure to transfer commons-io:commons-io/maven-metadata.xml from https://repo.spring.io/snapshot was cached in the local repository, resolution will not be reattempted until the update interval of spring-snapshot has elapsed or updates are forced. Original error: Could not transfer metadata commons-io:commons-io/maven-metadata.xml from/to spring-snapshot (https://repo.spring.io/snapshot): The operation was cancelled.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-05-18 17:32:09.108
+!MESSAGE Failure to transfer commons-io:commons-io/maven-metadata.xml from https://dl.bintray.com/rabbitmq/maven-milestones was cached in the local repository, resolution will not be reattempted until the update interval of rabbit-milestone has elapsed or updates are forced. Original error: Could not transfer metadata commons-io:commons-io/maven-metadata.xml from/to rabbit-milestone (https://dl.bintray.com/rabbitmq/maven-milestones): The operation was cancelled.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-05-18 17:32:09.108
+!MESSAGE Failure to transfer commons-io:commons-io/maven-metadata.xml from https://repo.maven.apache.org/maven2 was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer metadata commons-io:commons-io/maven-metadata.xml from/to central (https://repo.maven.apache.org/maven2): The operation was cancelled.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-05-18 17:32:18.763
+!MESSAGE Failure to transfer commons-io:commons-io/maven-metadata.xml from https://repo.spring.io/milestone was cached in the local repository, resolution will not be reattempted until the update interval of spring-milestone has elapsed or updates are forced. Original error: Could not transfer metadata commons-io:commons-io/maven-metadata.xml from/to spring-milestone (https://repo.spring.io/milestone): The operation was cancelled.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-05-18 17:32:18.779
+!MESSAGE Failure to transfer commons-io:commons-io/maven-metadata.xml from https://repo.spring.io/snapshot was cached in the local repository, resolution will not be reattempted until the update interval of spring-snapshot has elapsed or updates are forced. Original error: Could not transfer metadata commons-io:commons-io/maven-metadata.xml from/to spring-snapshot (https://repo.spring.io/snapshot): The operation was cancelled.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-05-18 17:32:18.780
+!MESSAGE Failure to transfer commons-io:commons-io/maven-metadata.xml from https://dl.bintray.com/rabbitmq/maven-milestones was cached in the local repository, resolution will not be reattempted until the update interval of rabbit-milestone has elapsed or updates are forced. Original error: Could not transfer metadata commons-io:commons-io/maven-metadata.xml from/to rabbit-milestone (https://dl.bintray.com/rabbitmq/maven-milestones): The operation was cancelled.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-05-18 17:32:18.780
+!MESSAGE Failure to transfer commons-io:commons-io/maven-metadata.xml from https://repo.maven.apache.org/maven2 was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer metadata commons-io:commons-io/maven-metadata.xml from/to central (https://repo.maven.apache.org/maven2): The operation was cancelled.
+
+!ENTRY org.eclipse.ui 2 2 2020-05-18 17:32:29.314
+!MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-05-18 17:32:37.296
+!MESSAGE Failure to transfer commons-io:commons-io/maven-metadata.xml from https://repo.spring.io/milestone was cached in the local repository, resolution will not be reattempted until the update interval of spring-milestone has elapsed or updates are forced. Original error: Could not transfer metadata commons-io:commons-io/maven-metadata.xml from/to spring-milestone (https://repo.spring.io/milestone): The operation was cancelled.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-05-18 17:32:37.297
+!MESSAGE Failure to transfer commons-io:commons-io/maven-metadata.xml from https://repo.spring.io/snapshot was cached in the local repository, resolution will not be reattempted until the update interval of spring-snapshot has elapsed or updates are forced. Original error: Could not transfer metadata commons-io:commons-io/maven-metadata.xml from/to spring-snapshot (https://repo.spring.io/snapshot): The operation was cancelled.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-05-18 17:32:37.297
+!MESSAGE Failure to transfer commons-io:commons-io/maven-metadata.xml from https://dl.bintray.com/rabbitmq/maven-milestones was cached in the local repository, resolution will not be reattempted until the update interval of rabbit-milestone has elapsed or updates are forced. Original error: Could not transfer metadata commons-io:commons-io/maven-metadata.xml from/to rabbit-milestone (https://dl.bintray.com/rabbitmq/maven-milestones): The operation was cancelled.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-05-18 17:32:37.298
+!MESSAGE Failure to transfer commons-io:commons-io/maven-metadata.xml from https://repo.maven.apache.org/maven2 was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer metadata commons-io:commons-io/maven-metadata.xml from/to central (https://repo.maven.apache.org/maven2): The operation was cancelled.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-05-18 17:32:37.526
+!MESSAGE Failure to transfer commons-io:commons-io/maven-metadata.xml from https://repo.spring.io/milestone was cached in the local repository, resolution will not be reattempted until the update interval of spring-milestone has elapsed or updates are forced. Original error: Could not transfer metadata commons-io:commons-io/maven-metadata.xml from/to spring-milestone (https://repo.spring.io/milestone): The operation was cancelled.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-05-18 17:32:37.533
+!MESSAGE Failure to transfer commons-io:commons-io/maven-metadata.xml from https://repo.spring.io/snapshot was cached in the local repository, resolution will not be reattempted until the update interval of spring-snapshot has elapsed or updates are forced. Original error: Could not transfer metadata commons-io:commons-io/maven-metadata.xml from/to spring-snapshot (https://repo.spring.io/snapshot): The operation was cancelled.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-05-18 17:32:37.539
+!MESSAGE Failure to transfer commons-io:commons-io/maven-metadata.xml from https://dl.bintray.com/rabbitmq/maven-milestones was cached in the local repository, resolution will not be reattempted until the update interval of rabbit-milestone has elapsed or updates are forced. Original error: Could not transfer metadata commons-io:commons-io/maven-metadata.xml from/to rabbit-milestone (https://dl.bintray.com/rabbitmq/maven-milestones): The operation was cancelled.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-05-18 17:32:37.540
+!MESSAGE Failure to transfer commons-io:commons-io/maven-metadata.xml from https://repo.maven.apache.org/maven2 was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer metadata commons-io:commons-io/maven-metadata.xml from/to central (https://repo.maven.apache.org/maven2): The operation was cancelled.
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-05-18 17:32:37.805
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-05-18 17:32:37.811
+!MESSAGE classpath=320 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-05-18 17:32:37.813
+!MESSAGE buffering callback sts4.classpath.JmXcnhms springboot2-ionic-backend false 30
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-05-18 17:32:37.818
+!MESSAGE executing callback sts4.classpath.JmXcnhms 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-05-18 17:32:37.834
+!MESSAGE executing callback sts4.classpath.JmXcnhms SUCCESS [done]
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-05-18 17:32:38.608
+!MESSAGE Failure to transfer commons-io:commons-io/maven-metadata.xml from https://repo.spring.io/milestone was cached in the local repository, resolution will not be reattempted until the update interval of spring-milestone has elapsed or updates are forced. Original error: Could not transfer metadata commons-io:commons-io/maven-metadata.xml from/to spring-milestone (https://repo.spring.io/milestone): The operation was cancelled.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-05-18 17:32:38.609
+!MESSAGE Failure to transfer commons-io:commons-io/maven-metadata.xml from https://repo.spring.io/snapshot was cached in the local repository, resolution will not be reattempted until the update interval of spring-snapshot has elapsed or updates are forced. Original error: Could not transfer metadata commons-io:commons-io/maven-metadata.xml from/to spring-snapshot (https://repo.spring.io/snapshot): The operation was cancelled.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-05-18 17:32:38.609
+!MESSAGE Failure to transfer commons-io:commons-io/maven-metadata.xml from https://dl.bintray.com/rabbitmq/maven-milestones was cached in the local repository, resolution will not be reattempted until the update interval of rabbit-milestone has elapsed or updates are forced. Original error: Could not transfer metadata commons-io:commons-io/maven-metadata.xml from/to rabbit-milestone (https://dl.bintray.com/rabbitmq/maven-milestones): The operation was cancelled.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-05-18 17:32:38.609
+!MESSAGE Failure to transfer commons-io:commons-io/maven-metadata.xml from https://repo.maven.apache.org/maven2 was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer metadata commons-io:commons-io/maven-metadata.xml from/to central (https://repo.maven.apache.org/maven2): The operation was cancelled.
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2020-05-18 17:34:10.610
+!MESSAGE Could not download sources for antlr:antlr:2.7.7
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not resolve artifact antlr:antlr:jar:sources:2.7.7
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$4(MavenImpl.java:803)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:179)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:114)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:101)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:771)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:748)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:330)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:304)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:269)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:233)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:161)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:179)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:153)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:101)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1373)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:161)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Missing antlr:antlr:jar:sources:2.7.7
+!SUBENTRY 1 org.eclipse.m2e.core 4 -1 2020-05-18 17:34:10.611
+!MESSAGE Could not resolve artifact antlr:antlr:jar:sources:2.7.7
+!SUBENTRY 2 org.eclipse.m2e.core 4 -1 2020-05-18 17:34:10.611
+!MESSAGE Missing antlr:antlr:jar:sources:2.7.7
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2020-05-18 17:34:55.771
+!MESSAGE Could not download sources for com.amazonaws:aws-java-sdk:LATEST
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not resolve artifact com.amazonaws:aws-java-sdk:jar:sources:LATEST
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$4(MavenImpl.java:803)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:179)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:114)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:101)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:771)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:748)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:330)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:304)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:269)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:233)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:161)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:179)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:153)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:101)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1373)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:161)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Missing com.amazonaws:aws-java-sdk:jar:sources:LATEST
+!SUBENTRY 1 org.eclipse.m2e.core 4 -1 2020-05-18 17:34:55.771
+!MESSAGE Could not resolve artifact com.amazonaws:aws-java-sdk:jar:sources:LATEST
+!SUBENTRY 2 org.eclipse.m2e.core 4 -1 2020-05-18 17:34:55.771
+!MESSAGE Missing com.amazonaws:aws-java-sdk:jar:sources:LATEST
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-05-18 17:52:33.325
+!MESSAGE Failure to transfer commons-io:commons-io/maven-metadata.xml from https://repo.spring.io/milestone was cached in the local repository, resolution will not be reattempted until the update interval of spring-milestone has elapsed or updates are forced. Original error: Could not transfer metadata commons-io:commons-io/maven-metadata.xml from/to spring-milestone (https://repo.spring.io/milestone): The operation was cancelled.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-05-18 17:52:33.326
+!MESSAGE Failure to transfer commons-io:commons-io/maven-metadata.xml from https://repo.spring.io/snapshot was cached in the local repository, resolution will not be reattempted until the update interval of spring-snapshot has elapsed or updates are forced. Original error: Could not transfer metadata commons-io:commons-io/maven-metadata.xml from/to spring-snapshot (https://repo.spring.io/snapshot): The operation was cancelled.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-05-18 17:52:33.326
+!MESSAGE Failure to transfer commons-io:commons-io/maven-metadata.xml from https://dl.bintray.com/rabbitmq/maven-milestones was cached in the local repository, resolution will not be reattempted until the update interval of rabbit-milestone has elapsed or updates are forced. Original error: Could not transfer metadata commons-io:commons-io/maven-metadata.xml from/to rabbit-milestone (https://dl.bintray.com/rabbitmq/maven-milestones): The operation was cancelled.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-05-18 17:52:33.334
+!MESSAGE Failure to transfer commons-io:commons-io/maven-metadata.xml from https://repo.maven.apache.org/maven2 was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer metadata commons-io:commons-io/maven-metadata.xml from/to central (https://repo.maven.apache.org/maven2): The operation was cancelled.
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2020-05-18 17:52:33.335
+!MESSAGE Could not download sources for commons-io:commons-io:LATEST
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not resolve artifact commons-io:commons-io:jar:sources:LATEST
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$4(MavenImpl.java:803)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:179)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:114)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:101)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:771)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:748)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:330)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:304)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:269)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:233)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:161)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:179)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:153)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:101)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1373)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:161)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Failed to resolve version for commons-io:commons-io:jar:sources:LATEST: Could not find metadata commons-io:commons-io/maven-metadata.xml in local (/home/vanilson/.m2/repository)
+org.eclipse.aether.resolution.VersionResolutionException: Failed to resolve version for commons-io:commons-io:jar:sources:LATEST: Could not find metadata commons-io:commons-io/maven-metadata.xml in local (/home/vanilson/.m2/repository)
+	at org.apache.maven.repository.internal.DefaultVersionResolver.resolveVersion(DefaultVersionResolver.java:276)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolve(DefaultArtifactResolver.java:282)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolveArtifacts(DefaultArtifactResolver.java:229)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolveArtifact(DefaultArtifactResolver.java:207)
+	at org.eclipse.aether.internal.impl.DefaultRepositorySystem.resolveArtifact(DefaultRepositorySystem.java:262)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$4(MavenImpl.java:780)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:179)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:114)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:101)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:771)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:748)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:330)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:304)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:269)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:233)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:161)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:179)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:153)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:101)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1373)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:161)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.eclipse.aether.transfer.MetadataNotFoundException: Could not find metadata commons-io:commons-io/maven-metadata.xml in local (/home/vanilson/.m2/repository)
+	at org.eclipse.aether.internal.impl.DefaultMetadataResolver.resolve(DefaultMetadataResolver.java:220)
+	at org.eclipse.aether.internal.impl.DefaultMetadataResolver.resolveMetadata(DefaultMetadataResolver.java:181)
+	at org.apache.maven.repository.internal.DefaultVersionResolver.resolveVersion(DefaultVersionResolver.java:213)
+	... 21 more
+!SUBENTRY 1 org.eclipse.m2e.core 4 -1 2020-05-18 17:52:33.335
+!MESSAGE Could not resolve artifact commons-io:commons-io:jar:sources:LATEST
+!SUBENTRY 2 org.eclipse.m2e.core 4 -1 2020-05-18 17:52:33.335
+!MESSAGE Failed to resolve version for commons-io:commons-io:jar:sources:LATEST: Could not find metadata commons-io:commons-io/maven-metadata.xml in local (/home/vanilson/.m2/repository)
+!STACK 0
+org.eclipse.aether.resolution.VersionResolutionException: Failed to resolve version for commons-io:commons-io:jar:sources:LATEST: Could not find metadata commons-io:commons-io/maven-metadata.xml in local (/home/vanilson/.m2/repository)
+	at org.apache.maven.repository.internal.DefaultVersionResolver.resolveVersion(DefaultVersionResolver.java:276)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolve(DefaultArtifactResolver.java:282)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolveArtifacts(DefaultArtifactResolver.java:229)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolveArtifact(DefaultArtifactResolver.java:207)
+	at org.eclipse.aether.internal.impl.DefaultRepositorySystem.resolveArtifact(DefaultRepositorySystem.java:262)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$4(MavenImpl.java:780)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:179)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:114)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:101)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:771)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:748)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:330)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:304)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:269)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:233)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:161)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:179)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:153)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:101)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1373)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:161)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.eclipse.aether.transfer.MetadataNotFoundException: Could not find metadata commons-io:commons-io/maven-metadata.xml in local (/home/vanilson/.m2/repository)
+	at org.eclipse.aether.internal.impl.DefaultMetadataResolver.resolve(DefaultMetadataResolver.java:220)
+	at org.eclipse.aether.internal.impl.DefaultMetadataResolver.resolveMetadata(DefaultMetadataResolver.java:181)
+	at org.apache.maven.repository.internal.DefaultVersionResolver.resolveVersion(DefaultVersionResolver.java:213)
+	... 21 more
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2020-05-18 17:52:38.167
+!MESSAGE Could not download javadoc for antlr:antlr:2.7.7
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not resolve artifact antlr:antlr:jar:javadoc:2.7.7
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$4(MavenImpl.java:803)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:179)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:114)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:101)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:771)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:748)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:330)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:316)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:269)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:233)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:161)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:179)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:153)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:101)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1373)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:161)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Missing antlr:antlr:jar:javadoc:2.7.7
+!SUBENTRY 1 org.eclipse.m2e.core 4 -1 2020-05-18 17:52:38.167
+!MESSAGE Could not resolve artifact antlr:antlr:jar:javadoc:2.7.7
+!SUBENTRY 2 org.eclipse.m2e.core 4 -1 2020-05-18 17:52:38.167
+!MESSAGE Missing antlr:antlr:jar:javadoc:2.7.7
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2020-05-18 17:52:38.960
+!MESSAGE Could not download javadoc for com.amazonaws:aws-java-sdk:LATEST
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not resolve artifact com.amazonaws:aws-java-sdk:jar:javadoc:LATEST
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$4(MavenImpl.java:803)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:179)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:114)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:101)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:771)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:748)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:330)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:316)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:269)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:233)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:161)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:179)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:153)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:101)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1373)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:161)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Missing com.amazonaws:aws-java-sdk:jar:javadoc:LATEST
+!SUBENTRY 1 org.eclipse.m2e.core 4 -1 2020-05-18 17:52:38.960
+!MESSAGE Could not resolve artifact com.amazonaws:aws-java-sdk:jar:javadoc:LATEST
+!SUBENTRY 2 org.eclipse.m2e.core 4 -1 2020-05-18 17:52:38.960
+!MESSAGE Missing com.amazonaws:aws-java-sdk:jar:javadoc:LATEST
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-05-18 17:52:39.106
+!MESSAGE Failure to transfer commons-io:commons-io/maven-metadata.xml from https://repo.spring.io/milestone was cached in the local repository, resolution will not be reattempted until the update interval of spring-milestone has elapsed or updates are forced. Original error: Could not transfer metadata commons-io:commons-io/maven-metadata.xml from/to spring-milestone (https://repo.spring.io/milestone): The operation was cancelled.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-05-18 17:52:39.106
+!MESSAGE Failure to transfer commons-io:commons-io/maven-metadata.xml from https://repo.spring.io/snapshot was cached in the local repository, resolution will not be reattempted until the update interval of spring-snapshot has elapsed or updates are forced. Original error: Could not transfer metadata commons-io:commons-io/maven-metadata.xml from/to spring-snapshot (https://repo.spring.io/snapshot): The operation was cancelled.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-05-18 17:52:39.106
+!MESSAGE Failure to transfer commons-io:commons-io/maven-metadata.xml from https://dl.bintray.com/rabbitmq/maven-milestones was cached in the local repository, resolution will not be reattempted until the update interval of rabbit-milestone has elapsed or updates are forced. Original error: Could not transfer metadata commons-io:commons-io/maven-metadata.xml from/to rabbit-milestone (https://dl.bintray.com/rabbitmq/maven-milestones): The operation was cancelled.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-05-18 17:52:39.107
+!MESSAGE Failure to transfer commons-io:commons-io/maven-metadata.xml from https://repo.maven.apache.org/maven2 was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer metadata commons-io:commons-io/maven-metadata.xml from/to central (https://repo.maven.apache.org/maven2): The operation was cancelled.
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2020-05-18 17:52:39.109
+!MESSAGE Could not download javadoc for commons-io:commons-io:LATEST
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not resolve artifact commons-io:commons-io:jar:javadoc:LATEST
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$4(MavenImpl.java:803)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:179)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:114)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:101)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:771)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:748)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:330)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:316)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:269)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:233)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:161)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:179)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:153)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:101)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1373)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:161)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Failed to resolve version for commons-io:commons-io:jar:javadoc:LATEST: Could not find metadata commons-io:commons-io/maven-metadata.xml in local (/home/vanilson/.m2/repository)
+org.eclipse.aether.resolution.VersionResolutionException: Failed to resolve version for commons-io:commons-io:jar:javadoc:LATEST: Could not find metadata commons-io:commons-io/maven-metadata.xml in local (/home/vanilson/.m2/repository)
+	at org.apache.maven.repository.internal.DefaultVersionResolver.resolveVersion(DefaultVersionResolver.java:276)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolve(DefaultArtifactResolver.java:282)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolveArtifacts(DefaultArtifactResolver.java:229)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolveArtifact(DefaultArtifactResolver.java:207)
+	at org.eclipse.aether.internal.impl.DefaultRepositorySystem.resolveArtifact(DefaultRepositorySystem.java:262)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$4(MavenImpl.java:780)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:179)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:114)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:101)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:771)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:748)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:330)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:316)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:269)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:233)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:161)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:179)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:153)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:101)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1373)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:161)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.eclipse.aether.transfer.MetadataNotFoundException: Could not find metadata commons-io:commons-io/maven-metadata.xml in local (/home/vanilson/.m2/repository)
+	at org.eclipse.aether.internal.impl.DefaultMetadataResolver.resolve(DefaultMetadataResolver.java:220)
+	at org.eclipse.aether.internal.impl.DefaultMetadataResolver.resolveMetadata(DefaultMetadataResolver.java:181)
+	at org.apache.maven.repository.internal.DefaultVersionResolver.resolveVersion(DefaultVersionResolver.java:213)
+	... 21 more
+!SUBENTRY 1 org.eclipse.m2e.core 4 -1 2020-05-18 17:52:39.109
+!MESSAGE Could not resolve artifact commons-io:commons-io:jar:javadoc:LATEST
+!SUBENTRY 2 org.eclipse.m2e.core 4 -1 2020-05-18 17:52:39.109
+!MESSAGE Failed to resolve version for commons-io:commons-io:jar:javadoc:LATEST: Could not find metadata commons-io:commons-io/maven-metadata.xml in local (/home/vanilson/.m2/repository)
+!STACK 0
+org.eclipse.aether.resolution.VersionResolutionException: Failed to resolve version for commons-io:commons-io:jar:javadoc:LATEST: Could not find metadata commons-io:commons-io/maven-metadata.xml in local (/home/vanilson/.m2/repository)
+	at org.apache.maven.repository.internal.DefaultVersionResolver.resolveVersion(DefaultVersionResolver.java:276)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolve(DefaultArtifactResolver.java:282)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolveArtifacts(DefaultArtifactResolver.java:229)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolveArtifact(DefaultArtifactResolver.java:207)
+	at org.eclipse.aether.internal.impl.DefaultRepositorySystem.resolveArtifact(DefaultRepositorySystem.java:262)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$4(MavenImpl.java:780)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:179)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:114)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:101)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:771)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:748)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:330)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:316)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:269)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:233)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:161)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:179)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:153)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:101)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1373)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:161)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.eclipse.aether.transfer.MetadataNotFoundException: Could not find metadata commons-io:commons-io/maven-metadata.xml in local (/home/vanilson/.m2/repository)
+	at org.eclipse.aether.internal.impl.DefaultMetadataResolver.resolve(DefaultMetadataResolver.java:220)
+	at org.eclipse.aether.internal.impl.DefaultMetadataResolver.resolveMetadata(DefaultMetadataResolver.java:181)
+	at org.apache.maven.repository.internal.DefaultVersionResolver.resolveVersion(DefaultVersionResolver.java:213)
+	... 21 more
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-05-18 17:52:39.360
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-05-18 17:52:39.362
+!MESSAGE classpath=320 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-05-18 17:52:39.363
+!MESSAGE buffering callback sts4.classpath.JmXcnhms springboot2-ionic-backend false 30
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-05-18 17:52:39.363
+!MESSAGE executing callback sts4.classpath.JmXcnhms 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-05-18 17:52:39.369
+!MESSAGE executing callback sts4.classpath.JmXcnhms SUCCESS [done]
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-05-18 17:54:46.210
+!MESSAGE Failure to transfer commons-io:commons-io/maven-metadata.xml from https://repo.spring.io/milestone was cached in the local repository, resolution will not be reattempted until the update interval of spring-milestone has elapsed or updates are forced. Original error: Could not transfer metadata commons-io:commons-io/maven-metadata.xml from/to spring-milestone (https://repo.spring.io/milestone): The operation was cancelled.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-05-18 17:54:46.503
+!MESSAGE Failure to transfer commons-io:commons-io/maven-metadata.xml from https://repo.spring.io/snapshot was cached in the local repository, resolution will not be reattempted until the update interval of spring-snapshot has elapsed or updates are forced. Original error: Could not transfer metadata commons-io:commons-io/maven-metadata.xml from/to spring-snapshot (https://repo.spring.io/snapshot): The operation was cancelled.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-05-18 17:54:46.505
+!MESSAGE Failure to transfer commons-io:commons-io/maven-metadata.xml from https://dl.bintray.com/rabbitmq/maven-milestones was cached in the local repository, resolution will not be reattempted until the update interval of rabbit-milestone has elapsed or updates are forced. Original error: Could not transfer metadata commons-io:commons-io/maven-metadata.xml from/to rabbit-milestone (https://dl.bintray.com/rabbitmq/maven-milestones): The operation was cancelled.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-05-18 17:54:46.507
+!MESSAGE Failure to transfer commons-io:commons-io/maven-metadata.xml from https://repo.maven.apache.org/maven2 was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer metadata commons-io:commons-io/maven-metadata.xml from/to central (https://repo.maven.apache.org/maven2): The operation was cancelled.
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-05-18 17:54:47.016
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-05-18 17:54:47.018
+!MESSAGE classpath=320 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-05-18 17:54:47.032
+!MESSAGE buffering callback sts4.classpath.JmXcnhms springboot2-ionic-backend false 30
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-05-18 17:54:47.032
+!MESSAGE executing callback sts4.classpath.JmXcnhms 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-05-18 17:54:47.036
+!MESSAGE executing callback sts4.classpath.JmXcnhms SUCCESS [done]
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-05-18 17:54:47.381
+!MESSAGE Failure to transfer commons-io:commons-io/maven-metadata.xml from https://repo.spring.io/milestone was cached in the local repository, resolution will not be reattempted until the update interval of spring-milestone has elapsed or updates are forced. Original error: Could not transfer metadata commons-io:commons-io/maven-metadata.xml from/to spring-milestone (https://repo.spring.io/milestone): The operation was cancelled.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-05-18 17:54:47.381
+!MESSAGE Failure to transfer commons-io:commons-io/maven-metadata.xml from https://repo.spring.io/snapshot was cached in the local repository, resolution will not be reattempted until the update interval of spring-snapshot has elapsed or updates are forced. Original error: Could not transfer metadata commons-io:commons-io/maven-metadata.xml from/to spring-snapshot (https://repo.spring.io/snapshot): The operation was cancelled.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-05-18 17:54:47.381
+!MESSAGE Failure to transfer commons-io:commons-io/maven-metadata.xml from https://dl.bintray.com/rabbitmq/maven-milestones was cached in the local repository, resolution will not be reattempted until the update interval of rabbit-milestone has elapsed or updates are forced. Original error: Could not transfer metadata commons-io:commons-io/maven-metadata.xml from/to rabbit-milestone (https://dl.bintray.com/rabbitmq/maven-milestones): The operation was cancelled.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-05-18 17:54:47.392
+!MESSAGE Failure to transfer commons-io:commons-io/maven-metadata.xml from https://repo.maven.apache.org/maven2 was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer metadata commons-io:commons-io/maven-metadata.xml from/to central (https://repo.maven.apache.org/maven2): The operation was cancelled.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-05-18 17:55:11.619
+!MESSAGE Failure to transfer commons-io:commons-io/maven-metadata.xml from https://repo.spring.io/milestone was cached in the local repository, resolution will not be reattempted until the update interval of spring-milestone has elapsed or updates are forced. Original error: Could not transfer metadata commons-io:commons-io/maven-metadata.xml from/to spring-milestone (https://repo.spring.io/milestone): The operation was cancelled.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-05-18 17:55:11.621
+!MESSAGE Failure to transfer commons-io:commons-io/maven-metadata.xml from https://repo.spring.io/snapshot was cached in the local repository, resolution will not be reattempted until the update interval of spring-snapshot has elapsed or updates are forced. Original error: Could not transfer metadata commons-io:commons-io/maven-metadata.xml from/to spring-snapshot (https://repo.spring.io/snapshot): The operation was cancelled.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-05-18 17:55:11.621
+!MESSAGE Failure to transfer commons-io:commons-io/maven-metadata.xml from https://dl.bintray.com/rabbitmq/maven-milestones was cached in the local repository, resolution will not be reattempted until the update interval of rabbit-milestone has elapsed or updates are forced. Original error: Could not transfer metadata commons-io:commons-io/maven-metadata.xml from/to rabbit-milestone (https://dl.bintray.com/rabbitmq/maven-milestones): The operation was cancelled.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-05-18 17:55:11.621
+!MESSAGE Failure to transfer commons-io:commons-io/maven-metadata.xml from https://repo.maven.apache.org/maven2 was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer metadata commons-io:commons-io/maven-metadata.xml from/to central (https://repo.maven.apache.org/maven2): The operation was cancelled.
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-05-18 17:55:12.105
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-05-18 17:55:12.108
+!MESSAGE classpath=320 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-05-18 17:55:12.109
+!MESSAGE buffering callback sts4.classpath.JmXcnhms springboot2-ionic-backend false 30
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-05-18 17:55:12.109
+!MESSAGE executing callback sts4.classpath.JmXcnhms 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-05-18 17:55:12.113
+!MESSAGE executing callback sts4.classpath.JmXcnhms SUCCESS [done]
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-05-18 17:55:12.441
+!MESSAGE Failure to transfer commons-io:commons-io/maven-metadata.xml from https://repo.spring.io/milestone was cached in the local repository, resolution will not be reattempted until the update interval of spring-milestone has elapsed or updates are forced. Original error: Could not transfer metadata commons-io:commons-io/maven-metadata.xml from/to spring-milestone (https://repo.spring.io/milestone): The operation was cancelled.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-05-18 17:55:12.441
+!MESSAGE Failure to transfer commons-io:commons-io/maven-metadata.xml from https://repo.spring.io/snapshot was cached in the local repository, resolution will not be reattempted until the update interval of spring-snapshot has elapsed or updates are forced. Original error: Could not transfer metadata commons-io:commons-io/maven-metadata.xml from/to spring-snapshot (https://repo.spring.io/snapshot): The operation was cancelled.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-05-18 17:55:12.442
+!MESSAGE Failure to transfer commons-io:commons-io/maven-metadata.xml from https://dl.bintray.com/rabbitmq/maven-milestones was cached in the local repository, resolution will not be reattempted until the update interval of rabbit-milestone has elapsed or updates are forced. Original error: Could not transfer metadata commons-io:commons-io/maven-metadata.xml from/to rabbit-milestone (https://dl.bintray.com/rabbitmq/maven-milestones): The operation was cancelled.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-05-18 17:55:12.442
+!MESSAGE Failure to transfer commons-io:commons-io/maven-metadata.xml from https://repo.maven.apache.org/maven2 was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer metadata commons-io:commons-io/maven-metadata.xml from/to central (https://repo.maven.apache.org/maven2): The operation was cancelled.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-05-18 17:55:51.176
+!MESSAGE Failure to transfer commons-io:commons-io/maven-metadata.xml from https://repo.spring.io/milestone was cached in the local repository, resolution will not be reattempted until the update interval of spring-milestone has elapsed or updates are forced. Original error: Could not transfer metadata commons-io:commons-io/maven-metadata.xml from/to spring-milestone (https://repo.spring.io/milestone): The operation was cancelled.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-05-18 17:55:51.177
+!MESSAGE Failure to transfer commons-io:commons-io/maven-metadata.xml from https://repo.spring.io/snapshot was cached in the local repository, resolution will not be reattempted until the update interval of spring-snapshot has elapsed or updates are forced. Original error: Could not transfer metadata commons-io:commons-io/maven-metadata.xml from/to spring-snapshot (https://repo.spring.io/snapshot): The operation was cancelled.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-05-18 17:55:51.177
+!MESSAGE Failure to transfer commons-io:commons-io/maven-metadata.xml from https://dl.bintray.com/rabbitmq/maven-milestones was cached in the local repository, resolution will not be reattempted until the update interval of rabbit-milestone has elapsed or updates are forced. Original error: Could not transfer metadata commons-io:commons-io/maven-metadata.xml from/to rabbit-milestone (https://dl.bintray.com/rabbitmq/maven-milestones): The operation was cancelled.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-05-18 17:55:51.178
+!MESSAGE Failure to transfer commons-io:commons-io/maven-metadata.xml from https://repo.maven.apache.org/maven2 was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer metadata commons-io:commons-io/maven-metadata.xml from/to central (https://repo.maven.apache.org/maven2): The operation was cancelled.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-05-18 17:55:53.519
+!MESSAGE Failure to transfer commons-io:commons-io/maven-metadata.xml from https://repo.spring.io/milestone was cached in the local repository, resolution will not be reattempted until the update interval of spring-milestone has elapsed or updates are forced. Original error: Could not transfer metadata commons-io:commons-io/maven-metadata.xml from/to spring-milestone (https://repo.spring.io/milestone): The operation was cancelled.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-05-18 17:55:53.519
+!MESSAGE Failure to transfer commons-io:commons-io/maven-metadata.xml from https://repo.spring.io/snapshot was cached in the local repository, resolution will not be reattempted until the update interval of spring-snapshot has elapsed or updates are forced. Original error: Could not transfer metadata commons-io:commons-io/maven-metadata.xml from/to spring-snapshot (https://repo.spring.io/snapshot): The operation was cancelled.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-05-18 17:55:53.808
+!MESSAGE Failure to transfer commons-io:commons-io/maven-metadata.xml from https://dl.bintray.com/rabbitmq/maven-milestones was cached in the local repository, resolution will not be reattempted until the update interval of rabbit-milestone has elapsed or updates are forced. Original error: Could not transfer metadata commons-io:commons-io/maven-metadata.xml from/to rabbit-milestone (https://dl.bintray.com/rabbitmq/maven-milestones): The operation was cancelled.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-05-18 17:55:53.809
+!MESSAGE Failure to transfer commons-io:commons-io/maven-metadata.xml from https://repo.maven.apache.org/maven2 was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer metadata commons-io:commons-io/maven-metadata.xml from/to central (https://repo.maven.apache.org/maven2): The operation was cancelled.
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-05-18 17:56:14.678
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-05-18 17:56:14.680
+!MESSAGE classpath=320 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-05-18 17:56:14.681
+!MESSAGE buffering callback sts4.classpath.JmXcnhms springboot2-ionic-backend false 30
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-05-18 17:56:14.681
+!MESSAGE executing callback sts4.classpath.JmXcnhms 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-05-18 17:56:14.684
+!MESSAGE executing callback sts4.classpath.JmXcnhms SUCCESS [done]
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-05-18 17:56:45.653
+!MESSAGE Failure to transfer commons-io:commons-io/maven-metadata.xml from https://repo.spring.io/milestone was cached in the local repository, resolution will not be reattempted until the update interval of spring-milestone has elapsed or updates are forced. Original error: Could not transfer metadata commons-io:commons-io/maven-metadata.xml from/to spring-milestone (https://repo.spring.io/milestone): The operation was cancelled.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-05-18 17:56:45.654
+!MESSAGE Failure to transfer commons-io:commons-io/maven-metadata.xml from https://repo.spring.io/snapshot was cached in the local repository, resolution will not be reattempted until the update interval of spring-snapshot has elapsed or updates are forced. Original error: Could not transfer metadata commons-io:commons-io/maven-metadata.xml from/to spring-snapshot (https://repo.spring.io/snapshot): The operation was cancelled.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-05-18 17:56:45.655
+!MESSAGE Failure to transfer commons-io:commons-io/maven-metadata.xml from https://dl.bintray.com/rabbitmq/maven-milestones was cached in the local repository, resolution will not be reattempted until the update interval of rabbit-milestone has elapsed or updates are forced. Original error: Could not transfer metadata commons-io:commons-io/maven-metadata.xml from/to rabbit-milestone (https://dl.bintray.com/rabbitmq/maven-milestones): The operation was cancelled.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-05-18 17:56:45.655
+!MESSAGE Failure to transfer commons-io:commons-io/maven-metadata.xml from https://repo.maven.apache.org/maven2 was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer metadata commons-io:commons-io/maven-metadata.xml from/to central (https://repo.maven.apache.org/maven2): The operation was cancelled.
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-05-18 17:56:46.144
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-05-18 17:56:46.147
+!MESSAGE classpath=320 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-05-18 17:56:46.148
+!MESSAGE buffering callback sts4.classpath.JmXcnhms springboot2-ionic-backend false 30
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-05-18 17:56:46.149
+!MESSAGE executing callback sts4.classpath.JmXcnhms 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-05-18 17:56:46.155
+!MESSAGE executing callback sts4.classpath.JmXcnhms SUCCESS [done]
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-05-18 17:56:46.498
+!MESSAGE Failure to transfer commons-io:commons-io/maven-metadata.xml from https://repo.spring.io/milestone was cached in the local repository, resolution will not be reattempted until the update interval of spring-milestone has elapsed or updates are forced. Original error: Could not transfer metadata commons-io:commons-io/maven-metadata.xml from/to spring-milestone (https://repo.spring.io/milestone): The operation was cancelled.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-05-18 17:56:46.499
+!MESSAGE Failure to transfer commons-io:commons-io/maven-metadata.xml from https://repo.spring.io/snapshot was cached in the local repository, resolution will not be reattempted until the update interval of spring-snapshot has elapsed or updates are forced. Original error: Could not transfer metadata commons-io:commons-io/maven-metadata.xml from/to spring-snapshot (https://repo.spring.io/snapshot): The operation was cancelled.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-05-18 17:56:46.500
+!MESSAGE Failure to transfer commons-io:commons-io/maven-metadata.xml from https://dl.bintray.com/rabbitmq/maven-milestones was cached in the local repository, resolution will not be reattempted until the update interval of rabbit-milestone has elapsed or updates are forced. Original error: Could not transfer metadata commons-io:commons-io/maven-metadata.xml from/to rabbit-milestone (https://dl.bintray.com/rabbitmq/maven-milestones): The operation was cancelled.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-05-18 17:56:46.501
+!MESSAGE Failure to transfer commons-io:commons-io/maven-metadata.xml from https://repo.maven.apache.org/maven2 was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer metadata commons-io:commons-io/maven-metadata.xml from/to central (https://repo.maven.apache.org/maven2): The operation was cancelled.
+
+!ENTRY org.eclipse.jface 4 2 2020-05-18 18:37:01.880
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.jface".
+!STACK 0
+java.lang.NullPointerException
+	at org.springframework.ide.eclipse.boot.dash.views.sections.BootDashUnifiedTreeSection$9.doubleClick(BootDashUnifiedTreeSection.java:373)
+	at org.eclipse.jface.viewers.StructuredViewer$1.run(StructuredViewer.java:782)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.internal.JFaceUtil.lambda$0(JFaceUtil.java:47)
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:174)
+	at org.eclipse.jface.viewers.StructuredViewer.fireDoubleClick(StructuredViewer.java:779)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.handleDoubleSelect(AbstractTreeViewer.java:1526)
+	at org.eclipse.jface.viewers.StructuredViewer$4.widgetDefaultSelected(StructuredViewer.java:1210)
+	at org.eclipse.jface.util.OpenStrategy.fireDefaultSelectionEvent(OpenStrategy.java:251)
+	at org.eclipse.jface.util.OpenStrategy.access$0(OpenStrategy.java:249)
+	at org.eclipse.jface.util.OpenStrategy$1.handleEvent(OpenStrategy.java:308)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:5687)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1423)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4955)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4448)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1160)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1049)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:658)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:557)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:154)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:150)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1447)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1420)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-05-18 18:38:21.900
+!MESSAGE Failure to transfer commons-io:commons-io/maven-metadata.xml from https://repo.spring.io/milestone was cached in the local repository, resolution will not be reattempted until the update interval of spring-milestone has elapsed or updates are forced. Original error: Could not transfer metadata commons-io:commons-io/maven-metadata.xml from/to spring-milestone (https://repo.spring.io/milestone): The operation was cancelled.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-05-18 18:38:21.901
+!MESSAGE Failure to transfer commons-io:commons-io/maven-metadata.xml from https://repo.spring.io/snapshot was cached in the local repository, resolution will not be reattempted until the update interval of spring-snapshot has elapsed or updates are forced. Original error: Could not transfer metadata commons-io:commons-io/maven-metadata.xml from/to spring-snapshot (https://repo.spring.io/snapshot): The operation was cancelled.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-05-18 18:38:21.901
+!MESSAGE Failure to transfer commons-io:commons-io/maven-metadata.xml from https://dl.bintray.com/rabbitmq/maven-milestones was cached in the local repository, resolution will not be reattempted until the update interval of rabbit-milestone has elapsed or updates are forced. Original error: Could not transfer metadata commons-io:commons-io/maven-metadata.xml from/to rabbit-milestone (https://dl.bintray.com/rabbitmq/maven-milestones): The operation was cancelled.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-05-18 18:38:21.901
+!MESSAGE Failure to transfer commons-io:commons-io/maven-metadata.xml from https://repo.maven.apache.org/maven2 was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer metadata commons-io:commons-io/maven-metadata.xml from/to central (https://repo.maven.apache.org/maven2): The operation was cancelled.
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-05-18 18:38:22.263
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-05-18 18:38:22.271
+!MESSAGE classpath=320 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-05-18 18:38:22.273
+!MESSAGE buffering callback sts4.classpath.JmXcnhms springboot2-ionic-backend false 30
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-05-18 18:38:22.273
+!MESSAGE executing callback sts4.classpath.JmXcnhms 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-05-18 18:38:22.278
+!MESSAGE executing callback sts4.classpath.JmXcnhms SUCCESS [done]
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-05-18 18:38:22.670
+!MESSAGE Failure to transfer commons-io:commons-io/maven-metadata.xml from https://repo.spring.io/milestone was cached in the local repository, resolution will not be reattempted until the update interval of spring-milestone has elapsed or updates are forced. Original error: Could not transfer metadata commons-io:commons-io/maven-metadata.xml from/to spring-milestone (https://repo.spring.io/milestone): The operation was cancelled.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-05-18 18:38:22.671
+!MESSAGE Failure to transfer commons-io:commons-io/maven-metadata.xml from https://repo.spring.io/snapshot was cached in the local repository, resolution will not be reattempted until the update interval of spring-snapshot has elapsed or updates are forced. Original error: Could not transfer metadata commons-io:commons-io/maven-metadata.xml from/to spring-snapshot (https://repo.spring.io/snapshot): The operation was cancelled.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-05-18 18:38:22.671
+!MESSAGE Failure to transfer commons-io:commons-io/maven-metadata.xml from https://dl.bintray.com/rabbitmq/maven-milestones was cached in the local repository, resolution will not be reattempted until the update interval of rabbit-milestone has elapsed or updates are forced. Original error: Could not transfer metadata commons-io:commons-io/maven-metadata.xml from/to rabbit-milestone (https://dl.bintray.com/rabbitmq/maven-milestones): The operation was cancelled.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-05-18 18:38:22.671
+!MESSAGE Failure to transfer commons-io:commons-io/maven-metadata.xml from https://repo.maven.apache.org/maven2 was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer metadata commons-io:commons-io/maven-metadata.xml from/to central (https://repo.maven.apache.org/maven2): The operation was cancelled.
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-05-18 18:45:22.635
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-05-18 18:45:22.636
+!MESSAGE classpath=327 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-05-18 18:45:22.637
+!MESSAGE buffering callback sts4.classpath.JmXcnhms springboot2-ionic-backend false 327
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-05-18 18:45:22.638
+!MESSAGE executing callback sts4.classpath.JmXcnhms 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-05-18 18:45:22.646
+!MESSAGE executing callback sts4.classpath.JmXcnhms SUCCESS [done]
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2020-05-18 18:45:26.330
+!MESSAGE Could not download sources for com.amazonaws:aws-java-sdk:1.11.785
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not resolve artifact com.amazonaws:aws-java-sdk:jar:sources:1.11.785
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$4(MavenImpl.java:803)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:179)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:114)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:101)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:771)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:748)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:330)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:304)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:269)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:233)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:161)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:179)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:153)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:101)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1373)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:161)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Missing com.amazonaws:aws-java-sdk:jar:sources:1.11.785
+!SUBENTRY 1 org.eclipse.m2e.core 4 -1 2020-05-18 18:45:26.330
+!MESSAGE Could not resolve artifact com.amazonaws:aws-java-sdk:jar:sources:1.11.785
+!SUBENTRY 2 org.eclipse.m2e.core 4 -1 2020-05-18 18:45:26.330
+!MESSAGE Missing com.amazonaws:aws-java-sdk:jar:sources:1.11.785
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-05-18 18:47:37.147
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.JmXcnhms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-05-18 18:47:37.147
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.JmXcnhms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-05-18 18:47:37.147
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-05-18 18:47:37.148
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.JmXcnhms => OK
+
+!ENTRY org.eclipse.m2e.core 4 -1 2020-05-18 18:47:38.316
+!MESSAGE Could not lookup required component
+!STACK 0
+org.codehaus.plexus.component.repository.exception.ComponentLookupException: java.util.NoSuchElementException
+      role: org.apache.maven.execution.MavenExecutionRequestPopulator
+  roleHint: 
+	at org.codehaus.plexus.DefaultPlexusContainer.lookup(DefaultPlexusContainer.java:267)
+	at org.codehaus.plexus.DefaultPlexusContainer.lookup(DefaultPlexusContainer.java:255)
+	at org.codehaus.plexus.DefaultPlexusContainer.lookup(DefaultPlexusContainer.java:249)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lookup(MavenImpl.java:1291)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.createExecutionRequest(MavenImpl.java:238)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.newExecutionRequest(MavenExecutionContext.java:94)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:127)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:101)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1373)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:161)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.util.NoSuchElementException
+	at java.base/java.util.Collections$EmptyIterator.next(Collections.java:4210)
+	at org.codehaus.plexus.DefaultPlexusContainer.lookup(DefaultPlexusContainer.java:263)
+	... 10 more
